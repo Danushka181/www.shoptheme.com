@@ -27,7 +27,7 @@ function mts_disable_auto_update_theme( $update, $item ) {
     }
     return $update;
 }
-add_filter( 'auto_update_theme', 'mts_disable_auto_update_theme' );
+// add_filter( 'auto_update_theme', 'mts_disable_auto_update_theme' );
 /**
  * Disable Google Typography plugin
  */

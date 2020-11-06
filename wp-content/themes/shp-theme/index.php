@@ -1,4 +1,7 @@
-<?php $mts_options = get_option(SHOP_THEME); ?>
+<?php $mts_options = get_option(SHOP_THEME); 
+var_dump($mts_options);
+die();
+?>
 <?php get_header(); ?>
 <?php
 if ( is_home() && $mts_options['mts_featured_slider'] == '1' ) {
