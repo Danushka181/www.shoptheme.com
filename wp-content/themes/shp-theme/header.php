@@ -16,6 +16,14 @@
 	<div class="main-container">
 		<?php $header_type = isset( $mts_options['mts_header_layout'] ) ? $mts_options['mts_header_layout'] : '1'; ?>
 		<?php get_template_part('header-type/header', $header_type ); ?>
+		<?php  
+			if ( is_front_page() ) {
+				// Get home page slider Layes slider 
+				get_template_part( 'home/section', 'slider' );
+			}else{
+				get_template_part( 'home/section', 'innerslide' );				
+			}
+		?>
 		<?php do_action('mts_after_header'); ?>
 		<?php if ( $mts_options['mts_breadcrumb'] == '1' && ! is_home() && !is_page_template('page-contact.php')) { ?>
 			<div class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#"><div class="container"><?php mts_the_breadcrumb(); ?></div></div>
