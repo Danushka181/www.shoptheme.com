@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * This class will be removed in future versions.
  *
  * @version	 3.0.0
- * @package	 WooCommerce/Abstracts
+ * @package	 WooCommerce\Abstracts
  * @category	Abstract Class
  * @author	  WooThemes
  */
@@ -18,7 +18,7 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 
 	/**
 	 * Add coupon code to the order.
-	 * @param string $code
+	 * @param string|array $code
 	 * @param int $discount tax amount.
 	 * @param int $discount_tax amount.
 	 * @return int order item ID
@@ -42,7 +42,7 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 
 	/**
 	 * Add a tax row to the order.
-	 * @param array $args
+	 * @param int $tax_rate_id
 	 * @param int $tax_amount amount of tax.
 	 * @param int $shipping_tax_amount shipping amount.
 	 * @return int order item ID
@@ -158,10 +158,10 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 			}
 		}
 
-		// Handly qty if set
+		// Handle qty if set.
 		if ( isset( $args['qty'] ) ) {
 			if ( $product->backorders_require_notification() && $product->is_on_backorder( $args['qty'] ) ) {
-				$item->add_meta_data( apply_filters( 'woocommerce_backordered_item_meta_name', __( 'Backordered', 'woocommerce' ) ), $args['qty'] - max( 0, $product->get_stock_quantity() ), true );
+				$item->add_meta_data( apply_filters( 'woocommerce_backordered_item_meta_name', __( 'Backordered', 'woocommerce' ), $item ), $args['qty'] - max( 0, $product->get_stock_quantity() ), true );
 			}
 			$args['subtotal'] = $args['subtotal'] ? $args['subtotal'] : wc_get_price_excluding_tax( $product, array( 'qty' => $args['qty'] ) );
 			$args['total']	= $args['total'] ? $args['total'] : wc_get_price_excluding_tax( $product, array( 'qty' => $args['qty'] ) );
@@ -312,11 +312,12 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 
 	/**
 	 * Get a product (either product or variation).
-	 * @deprecated Add deprecation notices in future release. Replaced with $item->get_product()
+	 * @deprecated 4.4.0
 	 * @param object $item
 	 * @return WC_Product|bool
 	 */
 	public function get_product_from_item( $item ) {
+		wc_deprecated_function( 'WC_Abstract_Legacy_Order::get_product_from_item', '4.4.0', '$item->get_product()' );
 		if ( is_callable( array( $item, 'get_product' ) ) ) {
 			$product = $item->get_product();
 		} else {
@@ -461,7 +462,10 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 	 * has_meta function for order items. This is different to the WC_Data
 	 * version and should be removed in future versions.
 	 *
-	 * @deprecated
+	 * @deprecated 3.0
+	 *
+	 * @param int $order_item_id
+	 *
 	 * @return array of meta data.
 	 */
 	public function has_meta( $order_item_id ) {
@@ -502,7 +506,7 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 				$i++;
 				/* translators: 1: current item count */
 				$prefix  = count( $download_files ) > 1 ? sprintf( __( 'Download %d', 'woocommerce' ), $i ) : __( 'Download', 'woocommerce' );
-				$links[] = '<small class="download-url">' . $prefix . ': <a href="' . esc_url( $file['download_url'] ) . '" target="_blank">' . esc_html( $file['name'] ) . '</a></small>' . "\n";
+				$links[] = '<small class="download-url">' . esc_html( $prefix ) . ': <a href="' . esc_url( $file['download_url'] ) . '" target="_blank">' . esc_html( $file['name'] ) . '</a></small>' . "\n";
 			}
 
 			echo '<br/>' . implode( '<br/>', $links );
@@ -593,6 +597,17 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 		}
 
 		return $item_meta_array;
+	}
+
+	/**
+	 * Get coupon codes only.
+	 *
+	 * @deprecated 3.7.0 - Replaced with better named method to reflect the actual data being returned.
+	 * @return array
+	 */
+	public function get_used_coupons() {
+		wc_deprecated_function( 'get_used_coupons', '3.7', 'WC_Abstract_Order::get_coupon_codes' );
+		return $this->get_coupon_codes();
 	}
 
 	/**
@@ -710,6 +725,10 @@ abstract class WC_Abstract_Legacy_Order extends WC_Data {
 	/**
 	 * Send the stock notifications.
 	 * @deprecated 3.0.0 No longer needs to be called directly.
+	 *
+	 * @param $product
+	 * @param $new_stock
+	 * @param $qty_ordered
 	 */
 	public function send_stock_notifications( $product, $new_stock, $qty_ordered ) {
 		wc_deprecated_function( 'WC_Order::send_stock_notifications', '3.0' );
