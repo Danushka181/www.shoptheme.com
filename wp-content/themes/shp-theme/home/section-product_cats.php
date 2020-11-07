@@ -1,6 +1,6 @@
 <?php
 if ( mts_isWooCommerce() ) {
-	$mts_options = get_option(MTS_THEME_NAME);
+	// $mts_options = get_option(MTS_THEME_NAME);
 
 	$browse_heading = isset( $mts_options['browse_heading'] ) ? $mts_options['browse_heading'] : '';
 

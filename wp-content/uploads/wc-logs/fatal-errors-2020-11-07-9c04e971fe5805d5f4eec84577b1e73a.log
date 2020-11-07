@@ -123,3 +123,37 @@ Stack trace:
 #6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
 #7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 96
 
+2020-11-07T09:01:09+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_post_data() in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php:3
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require()
+#1 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', false, Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\header.php(24): get_template_part('home/section', 'innerslide')
+#4 E:\WWW\www.shoptheme.com\wp-includes\template.php(730): require_once('E:\\WWW\\www.shop...')
+#5 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', true, Array)
+#6 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#7 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\woocommerce\archive-product.php(14): get_header('shop')
+#8 E:\WWW\www.shoptheme.c in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php on line 3
+
+2020-11-07T09:05:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_parent() in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php:12
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require()
+#1 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', false, Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\header.php(24): get_template_part('home/section', 'innerslide')
+#4 E:\WWW\www.shoptheme.com\wp-includes\template.php(730): require_once('E:\\WWW\\www.shop...')
+#5 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', true, Array)
+#6 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#7 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\woocommerce\archive-product.php(14): get_header('shop')
+#8 E:\WWW\www.shoptheme.com in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php on line 12
+
+2020-11-07T09:06:33+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_post_parent_id(), 0 passed in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php on line 12 and exactly 1 expected in E:\WWW\www.shoptheme.com\wp-includes\post.php:7069
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php(12): wp_get_post_parent_id()
+#1 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...')
+#2 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', false, Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\header.php(24): get_template_part('home/section', 'innerslide')
+#5 E:\WWW\www.shoptheme.com\wp-includes\template.php(730): require_once('E:\\WWW\\www.shop...')
+#6 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', true, Ar in E:\WWW\www.shoptheme.com\wp-includes\post.php on line 7069
+

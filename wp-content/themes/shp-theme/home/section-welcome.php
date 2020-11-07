@@ -4,6 +4,7 @@ $mts_options = get_option(SHOP_THEME);
 $welcome_heading = isset( $mts_options['welcome_heading'] ) ? $mts_options['welcome_heading'] : '';
 $welcome_subheading = isset( $mts_options['welcome_subheading'] ) ? $mts_options['welcome_subheading'] : '';
 ?>
+<br><br>
 <div class="welcome-ecommerce home-section clearfix">
 	<div class="container">
 	<?php if ( !empty( $welcome_heading ) ) { ?>

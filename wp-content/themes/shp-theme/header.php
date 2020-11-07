@@ -21,7 +21,7 @@
 				// Get home page slider Layes slider 
 				get_template_part( 'home/section', 'slider' );
 			}else{
-				get_template_part( 'home/section', 'innerslide' );				
+				get_template_part( 'home/section', 'innerslide' );							
 			}
 		?>
 		<?php do_action('mts_after_header'); ?>

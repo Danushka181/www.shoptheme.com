@@ -156,6 +156,12 @@ h6 {
     font-size: 16px;
     line-height: 1.4;
 }
+ul,.product-category{
+    list-style: none;
+}
+.browse-category-title{
+    font-size: 30px;
+}
 .sub-title { font-size: 12px }
 p { margin-bottom: 20px }
 a {
@@ -598,6 +604,23 @@ a#pull { display: none }
     float: left;
     width: 100%;
 }
+
+/* Inner page banner styles */
+.inner-banner{
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-banner h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+}
+
 .post {
     float: left;
     width: 100%;

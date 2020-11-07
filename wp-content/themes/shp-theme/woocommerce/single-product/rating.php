@@ -36,7 +36,10 @@ if ( $rating_count > 0 ) : ?>
 			</div>
 		<?php endif ?>
 
-		<?php $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) ); ?>
+		<?php
+			$tags_list 	=	get_the_terms( $post->ID, 'product_tag' );
+			$tags_list 	=	( $tags_list ) ? $tags_list : array();
+			$tag_count = sizeof( $tags_list ); ?>
 		<div class="product_meta">
 		<?php if ( version_compare( WC()->version, '3.0.0', ">=" ) ) { ?>
 			<?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $tag_count, MTS_THEME_TEXTDOMAIN ) . ' ', '.</span>' ); ?>
