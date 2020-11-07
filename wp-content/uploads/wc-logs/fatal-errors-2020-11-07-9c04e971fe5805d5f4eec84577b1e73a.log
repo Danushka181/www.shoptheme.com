@@ -1,0 +1,125 @@
+2020-11-07T08:17:21+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:17:22+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:23:45+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:23:45+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:23:49+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:23:49+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:28:40+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 95
+
+2020-11-07T08:28:40+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 95
+
+2020-11-07T08:29:06+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:10
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 10
+
+2020-11-07T08:29:06+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:10
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 10
+
+2020-11-07T08:29:54+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:12
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 12
+
+2020-11-07T08:30:56+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:96
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 96
+
+2020-11-07T08:30:56+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:96
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 96
+

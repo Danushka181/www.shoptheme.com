@@ -80,9 +80,16 @@ foreach($slides['properties']['attrs'] as $key => $val) {
 $init = implode(', ', $init);
 
 // Fix multiple jQuery issue
+if (!is_array($lsInit)) {
+    $lsInit = array();
+}
+
+// Fix multiple jQuery issue
 $lsInit[] = '<script data-cfasync="false" type="text/javascript">';
 $lsInit[] = 'var lsjQuery = jQuery;';
 $lsInit[] = '</script>';
+
+
 
 // Include JS files to body option
 if(get_option('ls_put_js_to_body', false)) {
