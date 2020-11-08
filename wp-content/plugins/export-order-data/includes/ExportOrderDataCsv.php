@@ -11,31 +11,30 @@ class ExportOrderDataCsv extends ExportOrderData
 
 	protected function export_single_order_data(){
 
-		if ( isset( $_POST )) {
+		if ( isset( $_POST ) || isset( $_GET ) ) {
 
 			$saved_data 	=	self::get_saved_settings_data();
-			$saved_data 	=	( $saved_data ) ? $saved_data : 'order_id | get_date_created | name | status | total |';
+			$saved_data 	=	( $saved_data ) ? $saved_data : 'order_id | order_date | name | status | order_total |';
 			$saved_data 	=	self::return_saved_data_as_array($saved_data);
-
-			// var_dump($saved_data);
 
 			// Ajax post order id
 			$order_id 	=	$_POST['order'];
+			$order_id 	=	( $order_id ) ? $order_id : $_GET['order'];
+
 			// get current order by id
 			$order = wc_get_order($order_id);
 
 			// var_dump($order);
-			$filename = 'genarated-csv-'.$order_id.'.csv';
+			$filename = 'genarated-csv-order-'.$order_id.'.csv';
 			$fp = fopen('php://output', 'w');
-
 
 			$header = $saved_data;
 
-			$export_array = [];
+			$export_array = $custom_headings = [];
 			if ( $header ) {
 				header('Content-type: application/csv; charset=utf-8');
 				header('Content-Disposition: attachment; filename='.$filename);
-				fputcsv($fp, $header);
+				// loop saved settings from user
 				foreach ( $header as $key => $head ) {
 					if ( $head != '' ) {
 						switch ($head) {
@@ -51,10 +50,10 @@ class ExportOrderDataCsv extends ExportOrderData
 							case 'name':
 								$export_array[$key] = $order->billing_first_name.' '.$order->billing_last_name;
 								break;
-							case 'total':
+							case 'order_total':
 								$export_array[$key] = $order->order_total;
 								break;
-							case 'get_date_created':
+							case 'order_date':
 								$export_array[$key] = $order->order_date;
 								break;
 							case 'discount_total':
@@ -70,10 +69,12 @@ class ExportOrderDataCsv extends ExportOrderData
 								$export_array[$key] = $order->payment_method_title;
 								break;
 						}
+						$custom_headings[] 	=  ucfirst(	str_replace('_', ' ', $head ) );
 					}
 				}
+				fputcsv($fp, $custom_headings);
 				fputcsv($fp, $export_array);
-				fclose($f);
+				fclose($fp);
 	            ob_end_flush();
 			}		
 

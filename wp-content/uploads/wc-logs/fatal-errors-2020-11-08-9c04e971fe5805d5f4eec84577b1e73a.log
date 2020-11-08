@@ -118,3 +118,159 @@ Stack trace:
 #5 {main}
   thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 17
 
+2020-11-08T15:59:48+00:00 CRITICAL Uncaught Error: Call to undefined function str_rplace() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php:92
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php(18): ExportOrderDataCsv::return_saved_data_as_array('order_id | get_...')
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(104): ExportOrderDataCsv::export_single_order_data()
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_single_post_data('')
+#3 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#6 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 92
+
+2020-11-08T17:15:58+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function ExportOrderData::export_bulk_csv_data(), 0 passed in E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php on line 285 and exactly 1 expected in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:155
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(285): ExportOrderData->export_bulk_csv_data()
+#1 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(206): WP_Hook->apply_filters(Array, Array)
+#2 E:\WWW\www.shoptheme.com\wp-admin\includes\class-wp-list-table.php(457): apply_filters('bulk_actions-ed...', Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\includes\class-wp-list-table.php(1293): WP_List_Table->bulk_actions('top')
+#4 E:\WWW\www.shoptheme.com\wp-admin\includes\class-wp-list-table.php(1231): WP_List_Table->display_tablenav('top')
+#5 E:\WWW\www.shoptheme.com\wp-admin\edit.php(449): WP_List_Table->display()
+#6 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 155
+
+2020-11-08T17:43:30+00:00 CRITICAL Uncaught Error: Call to undefined method ExportBulckOrdersCsv::return_saved_data_as_array() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php:16
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(169): ExportBulckOrdersCsv::export_buck_orders_data_csv('/wp-admin/edit....', Array)
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_scv_file_all_selected_items('/wp-admin/edit....', 'exp_bulk_order_...', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(206): WP_Hook->apply_filters('/wp-admin/edit....', Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\edit.php(202): apply_filters('handle_bulk_act...', '/wp-admin/edit....', 'exp_bulk_order_...', Array)
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php on line 16
+
+2020-11-08T17:44:25+00:00 CRITICAL Uncaught Error: Call to undefined method ExportOrderData::return_saved_data_as_array() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php:16
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(169): ExportBulckOrdersCsv::export_buck_orders_data_csv('/wp-admin/edit....', Array)
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_scv_file_all_selected_items('/wp-admin/edit....', 'exp_bulk_order_...', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(206): WP_Hook->apply_filters('/wp-admin/edit....', Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\edit.php(202): apply_filters('handle_bulk_act...', '/wp-admin/edit....', 'exp_bulk_order_...', Array)
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php on line 16
+
+2020-11-08T17:44:52+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php:14
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(169): ExportBulckOrdersCsv::export_buck_orders_data_csv('/wp-admin/edit....', Array)
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_scv_file_all_selected_items('/wp-admin/edit....', 'exp_bulk_order_...', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(206): WP_Hook->apply_filters('/wp-admin/edit....', Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\edit.php(202): apply_filters('handle_bulk_act...', '/wp-admin/edit....', 'exp_bulk_order_...', Array)
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php on line 14
+
+2020-11-08T17:45:54+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php:14
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(169): ExportBulckOrdersCsv::export_buck_orders_data_csv('/wp-admin/edit....', Array)
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_scv_file_all_selected_items('/wp-admin/edit....', 'exp_bulk_order_...', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(206): WP_Hook->apply_filters('/wp-admin/edit....', Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\edit.php(202): apply_filters('handle_bulk_act...', '/wp-admin/edit....', 'exp_bulk_order_...', Array)
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php on line 14
+
+2020-11-08T17:46:36+00:00 CRITICAL require_once(): Failed opening required 'E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes/includes/ExportOrderDataCsv.php' (include_path='.;C:\php\pear') in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php on line 14
+
+2020-11-08T17:47:18+00:00 CRITICAL require_once(): Failed opening required 'includes/ExportOrderDataCsv.php' (include_path='.;C:\php\pear') in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php on line 14
+
+2020-11-08T17:47:39+00:00 CRITICAL require_once(): Failed opening required '/ExportOrderDataCsv.php' (include_path='.;C:\php\pear') in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php on line 14
+
+2020-11-08T18:15:39+00:00 CRITICAL syntax error, unexpected '}' in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportBulckOrdersCsv.php on line 27
+
+2020-11-08T21:24:52+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:183
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 183
+
+2020-11-08T21:25:38+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:183
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 183
+
+2020-11-08T21:26:30+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:184
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 184
+
+2020-11-08T21:31:37+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:179
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 179
+
+2020-11-08T21:32:29+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:179
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 179
+
+2020-11-08T21:32:58+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:179
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 179
+
+2020-11-08T21:41:48+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:179
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 179
+
+2020-11-08T21:42:26+00:00 CRITICAL Uncaught Error: Class 'ExportOrderDataCsv' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:184
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 184
+
+2020-11-08T21:43:02+00:00 CRITICAL Uncaught Error: Call to undefined method ExportOrderData::export_single_order_data() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:184
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 184
+
+2020-11-08T21:44:18+00:00 CRITICAL Uncaught Error: Call to undefined function export_single_order_data() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:182
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_all_screening_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 182
+

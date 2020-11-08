@@ -123,8 +123,24 @@
 	}
 }
 
-#customExport{
+#customExport,.custom-export-btn,.export_csv_data{
 	background: $light-blue !important;
-	color: $white !important;
-
+	color: #fff !important;
+	padding: 5px 20px 8px;
+	cursor: pointer;
+	border-radius: 3px;
+	border: 1px solid $light-blue;
+	@include transition( all .5s ease );
+	outline: none;
+	&:hover{
+		background: $dark-blue !important;
+	}
+	&:focus{
+		border: none;
+		outline: none;
+	}
+}
+.export_csv_data{
+	width: 40px !important;
+	height: 20px;
 }

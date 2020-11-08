@@ -5,27 +5,24 @@
 	 */
 	defined( 'ABSPATH' ) or die( 'Hey, you cant do this!');
 
-
 	$saved_data 	=	'';
 	$saved_data 	=	$this->get_saved_settings_data();
-	$saved_data 	=	( $saved_data ) ? $saved_data : 'order_id | get_date_created | name | status | total |';
+	$saved_data 	=	( $saved_data ) ? $saved_data : 'order_id | order_date | name | status | order_total | ';
 
 	// Settings array
 	$setting_array 	=	array(
-		'order_id' => 'Order Id',
-		'status' => 'Order status',
-		'currency' => 'Order currency',
-		'name' => 'Name Of Customer',
-		'total' => 'Order Total',
-		'get_date_created' => 'Order Date',
-		'discount_total' => 'Order Discount',
-		'email' => 'Customer Email',
-		'phone' => 'Customer Phone',
-		'payment_method' => 'Payment Method',
+		'order_id' 			=> 'Order ID',
+		'status' 			=> 'Order status',
+		'currency' 			=> 'Order currency',
+		'name' 				=> 'Name Of Customer',
+		'order_total' 		=> 'Order Total',
+		'order_date' 		=> 'Order Date',
+		'discount_total' 	=> 'Order Discount',
+		'email' 			=> 'Customer Email',
+		'phone' 			=> 'Customer Phone',
+		'payment_method' 	=> 'Payment Method',
 	);
 
-
-	
 ?>
 <div class="wrap">
 	<!-- Woocommerce Layout for related styles -->
@@ -45,7 +42,7 @@
 		<div class="ex-order-setings-inner">
 			<h1>Woocommerce Order data export Settings <sup>v 1.0.0</sup></h1>
 			<p>Click on each items to export data on order pages. Plase be mind to save data after clicking items.</p>
-			<p>Navigate to <a href="admin.php??post_type=shop_order">orders listing</a> page..</p>
+			<p>Navigate to <a href="<?php echo admin_url( 'edit.php?post_type=shop_order'); ?>">orders listing</a> page..</p>
 
 			<?php 
 				if ( $setting_array ):
