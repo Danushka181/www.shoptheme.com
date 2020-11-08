@@ -1,0 +1,124 @@
+@import "./components/veriables";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.woocommerce-layout {
+    margin-left: -15px;
+    padding: 0;
+	.woocommerce-layout__header{
+		background: #fff;
+		box-sizing: border-box;
+		border-bottom: 1px solid #fff;
+		padding: 0;
+		min-height: 56px;
+		position: fixed;
+		width: 100%;
+		top: 32px;
+		z-index: 1001;
+		.woocommerce-layout__header-breadcrumbs {
+		    font-size: 13px;
+		    font-weight: 400;
+		    padding: 0 0 0 40px;
+		    flex: 1 auto;
+		    height: 56px;
+		    line-height: 56px;
+		    background: #fff;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+* Woocommerce Order data plugin styles here
+*-------------------------------------------------------------- */
+.ex-order-setings{
+	margin-top: 80px;
+	.ex-order-setings-inner{
+		h1{
+			font-size: 20px;
+			color: $light-blue;
+			margin-bottom: 10px;
+			@include desktop-m {
+				font-size: 32px;
+				font-weight: 700;
+				margin-bottom: 10px;
+			}
+			sup{
+				font-size: 11px;
+			}
+		}
+		p{
+			font-size: 16px;
+			color: $dark-blue;
+			margin: 0;
+			a{
+				font-weight: 700;
+				color: $light-blue;
+				display: inline-block;
+				text-decoration: none;
+				@include transition( all .5s ease-in-out );
+				&:hover{
+					color: $hover-blue;
+				}
+			}
+		}
+
+		.props-list{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-srart;
+			margin-top: 30px;
+			padding: 0;
+			li{
+				display: inline-block;
+				background: $dark-blue;
+				color: $white;
+				font-size: 15px;
+				padding: 5px 15px 7px 15px;
+				cursor: pointer;
+				margin: 2px;
+				@include transition(all .4s ease );
+				&:hover{
+					background: $light-blue;
+				}
+				&.active{
+					background: #e74c3c;
+				}
+			}
+		}
+		/* Forms data */
+		.save-setings{
+			margin-top: 20px;
+			textarea{
+				width: 100%;
+				height: 200px;
+				margin-bottom: 10px;
+				font-size: 16px;
+			}
+			a.submits{
+				display: inline-block;
+				padding: 10px 20px;
+				background: $dark-blue;
+				color: $white;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 15px;
+			}
+		}
+		.exp_msg{
+			display: block;
+			padding: 10px 20px;
+			opacity: 0;
+			color: $white;
+			margin-top: 15px;
+			@include transition(all .5s ease);
+			&.show{
+				opacity: 1;
+			}
+		}
+		
+	}
+}

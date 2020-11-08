@@ -1,0 +1,13 @@
+2020-11-08T07:57:03+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wpdb::update(), 2 passed in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\SaveExpSettings.php on line 29 and at least 3 expected in E:\WWW\www.shoptheme.com\wp-includes\wp-db.php:2296
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\SaveExpSettings.php(29): wpdb->update('shptest_wc_expo...', Array)
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(90): SaveExpSettings::save_exp_order_data()
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->save_setings_form_data('')
+#3 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_save_se...')
+#6 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-includes\wp-db.php on line 2296
+
+2020-11-08T08:05:26+00:00 CRITICAL syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\SaveExpSettings.php on line 29
+
