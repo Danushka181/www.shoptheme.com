@@ -5,6 +5,12 @@
 	 */
 	defined( 'ABSPATH' ) or die( 'Hey, you cant do this!');
 
+
+	$saved_data 	=	'';
+	$saved_data 	=	$this->get_saved_settings_data();
+	$saved_data 	=	( $saved_data ) ? $saved_data : 'order_id | get_date_created | name | status | total |';
+
+	// Settings array
 	$setting_array 	=	array(
 		'order_id' => 'Order Id',
 		'status' => 'Order status',
@@ -17,6 +23,8 @@
 		'phone' => 'Customer Phone',
 		'payment_method' => 'Payment Method',
 	);
+
+
 	
 ?>
 <div class="wrap">
@@ -45,7 +53,9 @@
 					<ul class="props-list" id="exp_props">
 						<?php
 							foreach ( $setting_array as $key => $seting ) {
-								echo '<li class="seting_exp" data-id="'.$key.'">'.$seting.'</li>';
+								// check already save settings
+								$active 	=	( strpos( $saved_data, $key ) !== false ) ? 'active' : '';
+								echo '<li class="seting_exp '.$active.'" data-id="'.$key.'">'.$seting.'</li>';
 							}
 						?>
 					</ul>
@@ -54,9 +64,10 @@
 
 			?>
 		    <div class="save-setings">
-		    	<textarea name="exp_settings" readonly id="exp_settings" value="<?php echo esc_attr( get_option('exp_settings') ); ?>"></textarea>
+		    	<textarea name="exp_settings" readonly id="exp_settings" value="<?php echo $saved_data; ?>"><?php echo $saved_data; ?></textarea>
 		    	<a href="#" class="submits" id="save_exp_setings">Save Settings</a>
 		    </div>
+		    <!-- Err messages showing -->
 		    <span id="exp_msg" class="exp_msg"></span>
 		</div>
 	</div>

@@ -11,3 +11,110 @@ Stack trace:
 
 2020-11-08T08:05:26+00:00 CRITICAL syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\SaveExpSettings.php on line 29
 
+2020-11-08T10:33:01+00:00 CRITICAL Cannot declare class ExportOrderData, because the name is already in use in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderData.php on line 0
+
+2020-11-08T10:36:18+00:00 CRITICAL Cannot declare class ExportOrderData, because the name is already in use in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderData.php on line 0
+
+2020-11-08T10:37:53+00:00 CRITICAL Cannot declare class ExportOrderData, because the name is already in use in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderData.php on line 0
+
+2020-11-08T10:38:48+00:00 CRITICAL Cannot declare class ExportOrderData, because the name is already in use in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderData.php on line 0
+
+2020-11-08T10:39:15+00:00 CRITICAL Cannot declare class ExportOrderData, because the name is already in use in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderData.php on line 0
+
+2020-11-08T10:51:26+00:00 CRITICAL Uncaught Error: Call to undefined function get_saved_settings_data() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\templates\setings-export.php:9
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(66): require_once()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->exp_order_export_settings('')
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\admin.php(259): do_action('woocommerce_pag...')
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\templates\setings-export.php on line 9
+
+2020-11-08T10:59:37+00:00 CRITICAL Uncaught Error: Call to undefined method ExportOrderData::save_exp_order_data() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:93
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->save_setings_form_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_save_se...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 93
+
+2020-11-08T11:00:05+00:00 CRITICAL Uncaught Error: Call to undefined method ExportOrderData::save_exp_order_data() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:93
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->save_setings_form_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_save_se...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 93
+
+2020-11-08T11:06:36+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 24
+
+2020-11-08T11:07:31+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 24
+
+2020-11-08T11:07:54+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 24
+
+2020-11-08T11:08:45+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 24
+
+2020-11-08T11:09:04+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 24
+
+2020-11-08T11:10:15+00:00 CRITICAL syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 24
+
+2020-11-08T11:14:58+00:00 CRITICAL Uncaught Error: Call to undefined method ExportOrderData::export_single_order_data() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:100
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_single_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 100
+
+2020-11-08T11:15:13+00:00 CRITICAL Uncaught Error: Call to undefined method ExportOrderData::export_single_order_data() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:100
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_single_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 100
+
+2020-11-08T11:15:39+00:00 CRITICAL Uncaught Error: Class 'SaveExpSettings' not found in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:100
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_single_post_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 100
+
+2020-11-08T11:18:49+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php:16
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(100): ExportOrderDataCsv::export_single_order_data()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_single_post_data('')
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 16
+
+2020-11-08T11:19:38+00:00 CRITICAL Uncaught Error: Call to undefined function get_saved_settings_data() in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php:16
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(100): ExportOrderDataCsv::export_single_order_data()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_single_post_data('')
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 16
+
+2020-11-08T11:27:04+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php:17
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(100): ExportOrderDataCsv::export_single_order_data()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData->export_single_post_data('')
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\admin-ajax.php(176): do_action('wp_ajax_export_...')
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\includes\ExportOrderDataCsv.php on line 17
+

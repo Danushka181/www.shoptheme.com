@@ -38,6 +38,9 @@ if ( !class_exists( 'ExportOrderData' )) {
 				add_action( 'admin_enqueue_scripts', array( $this, "exp_order_styles_and_script_load"));
 				// Save settings ajax call
 				add_action( 'wp_ajax_save_setings_form_data', array( $this, 'save_setings_form_data' ) );
+				add_action( 'wp_ajax_export_single_post_data', array( $this, 'export_single_post_data' ) );
+
+				add_action( 'woocommerce_order_item_add_action_buttons', array( $this, 'action_woocommerce_order_item_add_action_buttons'), 10, 1);
 			}
 			// Define plugin path for future use
 			define( "exp_plugn_path", plugin_dir_url( __FILE__ ));
@@ -83,12 +86,44 @@ if ( !class_exists( 'ExportOrderData' )) {
 			// echo "Deactivated";
 		}
 
-
+		// Save user saved settings to database
 		function save_setings_form_data(){
 			require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'includes/SaveExpSettings.php' );
 			$SaveExpSettings = new SaveExpSettings();
 			$SaveExpSettings::save_exp_order_data();
 			die();
+		}
+		// Export data as a CSV
+		function export_single_post_data(){
+			require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'includes/ExportOrderDataCsv.php' );
+			$ExportOrderDataCsv = new ExportOrderDataCsv();
+			$ExportOrderDataCsv::export_single_order_data();
+			die();
+		}
+
+		// Get saved settings from database
+		function get_saved_settings_data(){
+			global $wpdb;
+			$table_name = $wpdb->prefix . 'wc_export_list';
+			$currnet_user 	=	get_current_user_id();
+			// get all saved settings by user
+			$results = $wpdb->get_results( "SELECT * FROM $table_name WHERE user_names=$currnet_user");
+			// Saved data append to text area
+			if ( $results ) {
+				$saved_data 	=	$results[0]->export_items;
+			}else{
+				$saved_data 	=	'';
+			}
+			return $saved_data;
+		}
+
+
+
+		// define the woocommerce_order_item_add_action_buttons
+		function action_woocommerce_order_item_add_action_buttons( $order )
+		{
+			$order_object 	=	json_encode($order);
+		    echo '<a onclick="return exportSingleOrderData('.$order->ID.');" href="#" order-id="'.$order->ID.'" id="customExport" class="button generate-items">' . __( 'Export CSV', 'exp_order' ) . '</a>';
 		}
 
 
