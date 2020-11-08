@@ -1,6 +1,5 @@
 
 function saveFormDataUsingAjax( formData ){
-
 	var data = {
 		'action': 'save_setings_form_data',
 		'form_data': formData
@@ -9,26 +8,28 @@ function saveFormDataUsingAjax( formData ){
 	// since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
 	jQuery.post(ajaxurl, data, function(response) {
 		var response = JSON.parse(response);
-		console.log(response);
-		// check response status true
-		if ( response.status == true ) {
-			$('#exp_msg').text(response.msg);
-			$('#exp_msg').addClass('show');
-			$('#exp_msg').css('background', response.color );
-		}else{
-			$('#exp_msg').text(response.msg);
-			$('#exp_msg').addClass('show');
-			$('#exp_msg').css('background', response.color );
-		}
-
-		setTimeout( function(){
-			$('#exp_msg').removeClass('show');
-			$('#exp_msg').css('background', '#fff' );
-		}, 2000);
-
-
+		// check response status true and show errors
+		throw_errors_and_success(response);
 	});
 }
+
+function throw_errors_and_success( response ){
+	if ( response.status == true ) {
+		$('#exp_msg').text(response.msg);
+		$('#exp_msg').addClass('show');
+		$('#exp_msg').css('background', response.color );
+	}else{
+		$('#exp_msg').text(response.msg);
+		$('#exp_msg').addClass('show');
+		$('#exp_msg').css('background', response.color );
+	}
+	// remove error message
+	setTimeout( function(){
+		$('#exp_msg').removeClass('show');
+		$('#exp_msg').css('background', '#fff' );
+	}, 2000);
+}
+
 
 // Check li click on load event
 document.addEventListener('DOMContentLoaded', function() {
@@ -44,12 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	formSubmit.addEventListener("click", function(e) {
 		e.preventDefault();
 		var expField 	=	$('#exp_settings').val();
-		saveFormDataUsingAjax( expField );
+		if ( expField != '' ) {
+			saveFormDataUsingAjax( expField );
+		}else{
+			var response = { status : true, msg :'Filed cannot be empty', color:'red' }
+			throw_errors_and_success( response );
+		}
 	});
 
 });
 
-
+// Customize settings data
 function onElementsClickHandler(){
 	var dataId 		=	$(this).attr('data-id');
 	var textArea 	=	document.getElementById('exp_settings');
@@ -72,6 +78,35 @@ function onElementsClickHandler(){
 		var oldValues 	=	textArea.value;
 		textArea.value 	= 	oldValues+dataId+' | ';
 	}
+}
 
-	// console.log(dataId);
+// 
+function exportSingleOrderData( order ){
+	var data = {
+		'action': 'export_single_post_data',
+		'order': order
+	};
+	// ajax call to to export data
+	jQuery.post(ajaxurl, data, function(response) {
+
+		console.log(response);
+		if ( response != '' ) {
+			// Create hidden anchor for download data
+			var downloadLink = document.createElement("a");
+			var fileData = ['\ufeff'+response];
+			// Set application type
+			var blobObject = new Blob(fileData,{
+				type: "application/csv;charset=utf-8;"
+			});
+			// make download link
+			var url = URL.createObjectURL(blobObject);
+			downloadLink.href = url;
+			downloadLink.download = 'genarated-csv-order-'+order+'.csv';
+			// Download csv File
+			document.body.appendChild(downloadLink);
+			downloadLink.click();
+			document.body.removeChild(downloadLink);
+		}
+	});
+	return false;
 }
