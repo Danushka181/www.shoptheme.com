@@ -1,0 +1,519 @@
+2020-11-07T08:17:21+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:17:22+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:23:45+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:23:45+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:23:49+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:23:49+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php:83
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(218): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 83
+
+2020-11-07T08:28:40+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 95
+
+2020-11-07T08:28:40+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_init.php on line 95
+
+2020-11-07T08:29:06+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:10
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 10
+
+2020-11-07T08:29:06+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:10
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 10
+
+2020-11-07T08:29:54+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:12
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 12
+
+2020-11-07T08:30:56+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:96
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 96
+
+2020-11-07T08:30:56+00:00 CRITICAL Uncaught Error: [] operator not supported for strings in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php:96
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(219): include()
+#1 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(159): LS_Shortcode::generateSliderMarkup(Array)
+#2 E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\wp\shortcodes.php(49): LS_Shortcode::processShortcode(Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(343): LS_Shortcode::handleShortcode(Array, '', 'layerslider')
+#4 [internal function]: do_shortcode_tag(Array)
+#5 E:\WWW\www.shoptheme.com\wp-includes\shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(layers...', 'do_shortcode_ta...', '[layerslider id...')
+#6 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-slider.php(2): do_shortcode('[layerslider id...')
+#7 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...') in E:\WWW\www.shoptheme.com\wp-content\plugins\LayerSlider\includes\slider_markup_html.php on line 96
+
+2020-11-07T09:01:09+00:00 CRITICAL Uncaught Error: Call to undefined function wp_reset_post_data() in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php:3
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require()
+#1 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', false, Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\header.php(24): get_template_part('home/section', 'innerslide')
+#4 E:\WWW\www.shoptheme.com\wp-includes\template.php(730): require_once('E:\\WWW\\www.shop...')
+#5 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', true, Array)
+#6 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#7 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\woocommerce\archive-product.php(14): get_header('shop')
+#8 E:\WWW\www.shoptheme.c in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php on line 3
+
+2020-11-07T09:05:37+00:00 CRITICAL Uncaught Error: Call to undefined function get_post_parent() in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php:12
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require()
+#1 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', false, Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\header.php(24): get_template_part('home/section', 'innerslide')
+#4 E:\WWW\www.shoptheme.com\wp-includes\template.php(730): require_once('E:\\WWW\\www.shop...')
+#5 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', true, Array)
+#6 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#7 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\woocommerce\archive-product.php(14): get_header('shop')
+#8 E:\WWW\www.shoptheme.com in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php on line 12
+
+2020-11-07T09:06:33+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_post_parent_id(), 0 passed in E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php on line 12 and exactly 1 expected in E:\WWW\www.shoptheme.com\wp-includes\post.php:7069
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\home\section-innerslide.php(12): wp_get_post_parent_id()
+#1 E:\WWW\www.shoptheme.com\wp-includes\template.php(732): require('E:\\WWW\\www.shop...')
+#2 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', false, Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 E:\WWW\www.shoptheme.com\wp-content\themes\shp-theme\header.php(24): get_template_part('home/section', 'innerslide')
+#5 E:\WWW\www.shoptheme.com\wp-includes\template.php(730): require_once('E:\\WWW\\www.shop...')
+#6 E:\WWW\www.shoptheme.com\wp-includes\template.php(676): load_template('E:\\WWW\\www.shop...', true, Ar in E:\WWW\www.shoptheme.com\wp-includes\post.php on line 7069
+
+2020-11-07T23:00:04+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data(false)
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\includes\plugin.php(699): do_action('activate_export...', false)
+#4 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(58): activate_plugin('export-order-da...', 'http://local.sh...', false)
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:00:06+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:00:06+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:01:39+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data(false)
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\includes\plugin.php(699): do_action('activate_export...', false)
+#4 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(58): activate_plugin('export-order-da...', 'http://local.sh...', false)
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:01:40+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:01:40+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:02:41+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data(false)
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\includes\plugin.php(699): do_action('activate_export...', false)
+#4 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(58): activate_plugin('export-order-da...', 'http://local.sh...', false)
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:02:42+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:02:42+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:04:04+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:04:06+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:04:06+00:00 CRITICAL syntax error, unexpected '->' (T_OBJECT_OPERATOR) in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:06:17+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data(false)
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\includes\plugin.php(699): do_action('activate_export...', false)
+#4 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(58): activate_plugin('export-order-da...', 'http://local.sh...', false)
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:06:18+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:06:19+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:55
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#4 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 55
+
+2020-11-07T23:08:15+00:00 CRITICAL Uncaught Error: Call to protected method CreateDataBase::create_export_settings() from context 'ExportOrderData' in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:79
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(55): ExportOrderData::activate()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data(false)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\includes\plugin.php(699): do_action('activate_export...', false)
+#5 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(58): activate_plugin('export-order-da...', 'http://local.sh...', false)
+#6 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 79
+
+2020-11-07T23:08:17+00:00 CRITICAL Uncaught Error: Call to protected method CreateDataBase::create_export_settings() from context 'ExportOrderData' in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:79
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(55): ExportOrderData::activate()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 79
+
+2020-11-07T23:08:18+00:00 CRITICAL Uncaught Error: Call to protected method CreateDataBase::create_export_settings() from context 'ExportOrderData' in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:79
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(55): ExportOrderData::activate()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 79
+
+2020-11-07T23:08:40+00:00 CRITICAL Uncaught Error: Call to protected method CreateDataBase::create_export_settings() from context 'ExportOrderData' in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:79
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(55): ExportOrderData::activate()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data(false)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\includes\plugin.php(699): do_action('activate_export...', false)
+#5 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(58): activate_plugin('export-order-da...', 'http://local.sh...', false)
+#6 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 79
+
+2020-11-07T23:08:42+00:00 CRITICAL Uncaught Error: Call to protected method CreateDataBase::create_export_settings() from context 'ExportOrderData' in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:79
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(55): ExportOrderData::activate()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 79
+
+2020-11-07T23:08:42+00:00 CRITICAL Uncaught Error: Call to protected method CreateDataBase::create_export_settings() from context 'ExportOrderData' in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php:79
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php(55): ExportOrderData::activate()
+#1 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(287): ExportOrderData::active_plugin_data('')
+#2 E:\WWW\www.shoptheme.com\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#3 E:\WWW\www.shoptheme.com\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 E:\WWW\www.shoptheme.com\wp-admin\plugins.php(193): do_action('activate_export...')
+#5 {main}
+  thrown in E:\WWW\www.shoptheme.com\wp-content\plugins\export-order-data\export-order-data.php on line 79
+
+2020-11-07T23:33:20+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'custom_js')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E: in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:33:48+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'custom_js')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E: in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:33:48+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'custom_js')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E: in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:34:49+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'jquery_js')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E: in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:34:54+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'jquery_js')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E: in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:35:06+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'jquery_js')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E: in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:35:21+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'custom_js')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E: in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:35:51+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'custom_js')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E: in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:37:25+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'jquery_exp')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:37:26+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'jquery_exp')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8 E in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:37:42+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'jquery_exp')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 0)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 0)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 0)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 0)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 0)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 0)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 0)
+#8 E in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:38:29+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'backend_exp')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8  in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:38:37+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'backend_exp')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8  in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:40:05+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'backend_exp')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8  in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
+2020-11-07T23:40:05+00:00 CRITICAL Uncaught Error: Maximum function nesting level of '256' reached, aborting! in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php:166
+Stack trace:
+#0 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(166): explode('?', 'backend_exp')
+#1 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#2 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#3 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#4 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#5 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#6 E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php(186): WP_Scripts->all_deps(Array, true, 1)
+#7 E:\WWW\www.shoptheme.com\wp-includes\class.wp-scripts.php(619): WP_Dependencies->all_deps(Array, true, 1)
+#8  in E:\WWW\www.shoptheme.com\wp-includes\class.wp-dependencies.php on line 166
+
