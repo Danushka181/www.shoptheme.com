@@ -1,0 +1,39 @@
+// Media mixins for responsive
+@mixin phone {
+  @media only screen and (min-width : 320px) { @content; }
+}
+@mixin tab-p {
+  @media only screen and (min-width : 768px) { @content; }
+}
+@mixin tab-l {
+  @media only screen and (min-width : 992px) { @content; }
+}
+@mixin desktop-m {
+  @media only screen and (min-width : 1200px) { @content; }
+}
+@mixin desktop-l {
+  @media only screen and (min-width : 1600px) { @content; }
+}
+
+// Transitions handle
+@mixin transition( $prop ){
+	-webkit-transition: $prop;
+	-moz-transition: $prop;
+	-o-transition: $prop;
+	transition: $prop;
+}
+
+// Transform handle
+@mixin transform( $prop ){
+	-webkit-transform: $prop;
+	-moz-transform: $prop;
+	-o-transform: $prop;
+	transform: $prop;
+}
+
+// Transform handle
+@mixin bgImage( $pos, $size, $rep ){
+	background-repeat: $rep;
+	background-position: $pos;
+	background-size: $size;
+}
