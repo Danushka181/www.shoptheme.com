@@ -14,16 +14,15 @@ Author URI: http://fb.com/danushka181
 
 // Block direct access plugin data
 if ( !defined('ABSPATH') ) { exit; }
-
+// Check if class Exists
 if ( !class_exists( 'ExportOrderData' )) {
-	// Check Woocommerce is active
+	// Check Woocommerce is active when plugin init
 	if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) )  ) ){
-
-		// Define class for plugin
+		// Define Main class for ExportOrderData plugin
 		class ExportOrderData{
 			
 			private static $instance = null;
-			// Make self instance
+			// Make self instance for class
 			public static function getInstance() {
 				if (!isset(self::$instance)) {
 					$c = __CLASS__;
@@ -31,7 +30,7 @@ if ( !class_exists( 'ExportOrderData' )) {
 				}
 				return self::$instance;
 			}
-
+			// Constructed function for wp hooks
 			function __construct() {
 				if (!isset(self::$instance)) {
 		        	// Add page to dashboard for customize order export data
@@ -40,7 +39,9 @@ if ( !class_exists( 'ExportOrderData' )) {
 					add_action( 'admin_enqueue_scripts', array( $this, "exp_order_styles_and_script_load"));
 					// Save settings and export csv ajax call
 					add_action( 'wp_ajax_save_setings_form_data', array( $this, 'save_setings_form_data' ) );
+					// Settings screen forms data save ajax function declare
 					add_action( 'wp_ajax_export_single_post_data', array( $this, 'export_single_post_data' ) );
+					// Export all screening posts list by using ajax function
 					add_action( 'wp_ajax_export_all_screening_post_data', array( $this, 'export_all_screening_post_data' ) );
 					// Add custom export csv btn to order page
 					add_action( 'woocommerce_order_item_add_action_buttons', array( $this, 'action_woocommerce_order_item_add_action_buttons'), 10, 1);
@@ -54,7 +55,6 @@ if ( !class_exists( 'ExportOrderData' )) {
 					add_filter( 'handle_bulk_actions-edit-shop_order', array( $this, 'export_scv_file_all_selected_items'), 10, 3 );
 					// Add extra tabs button
 					add_action( 'manage_posts_extra_tablenav', array( $this, 'export_additional_action_btn_for_tab' ), 20, 1);
-
 				}
 				// Define plugin path for future use
 				define( "exp_plugn_path", plugin_dir_url( __FILE__ ));
@@ -64,16 +64,15 @@ if ( !class_exists( 'ExportOrderData' )) {
 			public function exp_order_export_admin_page(){
 				// add sub menu page under woocommerce Plugin
 				add_submenu_page( 'woocommerce', 'Export Order', 'Export Order', 'manage_options', 'exp-order-export', array( $this,'exp_order_export_settings' ) );
-
 			}
 
+			// This function trigger when plugin activate
 			public function active_plugin_data(){
 				/* Plugin Activation protected function call */
 				ExportOrderData::activate();			
 				/* Plugin Deactivation protected function call */
 				ExportOrderData::deactivate();
 			}
-
 
 			// Order export data customize page
 			public function exp_order_export_settings(){
@@ -88,6 +87,7 @@ if ( !class_exists( 'ExportOrderData' )) {
 				//wp_enqueue_script( 'form_script', plugins_url( '/assets/js/jquery.min.js', __FILE__ ) );
 				wp_enqueue_script( 'exp_cutom', plugins_url( '/assets/js/exp-script.js', __FILE__ ) );
 			}
+
 			// When plugin activate...
 			protected function activate(){
 				// Create database table when plugin activate
@@ -97,17 +97,19 @@ if ( !class_exists( 'ExportOrderData' )) {
 			}
 			
 			protected function deactivate(){
-				// echo "Deactivated";
+				// Needs to remove database and flush rewrite rules
 			}
 
-			// Save user saved settings to database
+			// Save user saved settings to database using Export order page
 			function save_setings_form_data(){
+				// Save all settings to database calling sub class
 				require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'includes/SaveExpSettings.php' );
 				$SaveExpSettings = new SaveExpSettings();
 				$SaveExpSettings::save_exp_order_data();
 				die();
 			}
-			// Export data as a CSV
+
+			// Export single order as a CSV file
 			function export_single_post_data(){
 				require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'includes/ExportOrderDataCsv.php' );
 				$ExportOrderDataCsv = new ExportOrderDataCsv();
@@ -123,11 +125,8 @@ if ( !class_exists( 'ExportOrderData' )) {
 				// get all saved settings by user
 				$results = $wpdb->get_results( "SELECT * FROM $table_name WHERE user_names=$currnet_user");
 				// Saved data append to text area
-				if ( $results ) {
-					$saved_data 	=	$results[0]->export_items;
-				}else{
-					$saved_data 	=	'';
-				}
+				$saved_data 	=	( $results ) ? $results[0]->export_items : '';
+				// return database saved user settings
 				return $saved_data;
 			}
 
@@ -161,7 +160,7 @@ if ( !class_exists( 'ExportOrderData' )) {
 
 			// Add bulk action for shop orders
 			function export_bulk_csv_data_action_init( $actions ) {
-				// Add Action
+				// Set Add Action
 				$actions['exp_bulk_order_export'] = __( 'Export CSV', 'woocommerce' );
 				return $actions;
 			}
@@ -172,6 +171,7 @@ if ( !class_exists( 'ExportOrderData' )) {
 	        	return $redirect_to; // Exit if not a action
 	        	require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'includes/ExportBulckOrdersCsv.php' );
 				$ExportBulckOrdersCsv = new ExportBulckOrdersCsv();
+				// Export data as CSV parsing order ids list
 				$ExportBulckOrdersCsv::export_buck_orders_data_csv( $post_ids );
 			}
 
@@ -183,11 +183,10 @@ if ( !class_exists( 'ExportOrderData' )) {
 					$post_ids 	=	$_POST['post_ids'];
 					ExportBulckOrdersCsv::export_buck_orders_data_csv( $post_ids );
 				}
-
 				die();
 			}
 
-
+			// Add custom button after filter button in order page
 			function export_additional_action_btn_for_tab( $which ) {
 				global $typenow;
 			    if ( 'shop_order' === $typenow && 'top' === $which ) {
@@ -200,15 +199,15 @@ if ( !class_exists( 'ExportOrderData' )) {
 			    }
 			}
 
-
 		}// End Class ExportOrderData
-
 
 		// Call class when plugin init action
 		add_action("init", function(){
 			ExportOrderData::getInstance();
 		});
+
 	}else{
+		// Give an error with back link if woocommerce not installed!
 		wp_die( __( 'Please activate WooCommerce.', 'export_csv_plugin' ), 'Plugin dependency check', array( 'back_link' => true ) );
 	}
 
