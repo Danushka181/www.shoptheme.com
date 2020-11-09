@@ -1,4 +1,5 @@
-(function($) {
+(function($) { //fix jquery not defind issue 
+	// Save forms data using ajax
 	function saveFormDataUsingAjax( formData ){
 		var data = {
 			'action': 'save_setings_form_data',
@@ -13,7 +14,9 @@
 		});
 	}
 
+	// Give error messages and succuess messages after data save in settings form
 	function throw_errors_and_success( response ){
+		// check ajax resposnse id true or false
 		if ( response.status == true ) {
 			$('#exp_msg').text(response.msg);
 			$('#exp_msg').addClass('show');
@@ -23,7 +26,8 @@
 			$('#exp_msg').addClass('show');
 			$('#exp_msg').css('background', response.color );
 		}
-		// remove error message
+
+		// remove error message after 2s
 		setTimeout( function(){
 			$('#exp_msg').removeClass('show');
 			$('#exp_msg').css('background', '#fff' );
@@ -31,7 +35,7 @@
 	}
 
 
-	// Check li click on load event
+	// winddow load event 
 	document.addEventListener('DOMContentLoaded', function() {
 
 		// Settings elements get by class name
@@ -55,12 +59,13 @@
 				}
 			});
 		}
-		// Export ecreening data 
+
+		// Export Screening data 
 		var customExport 	=document.getElementById('customExport');
 		if ( customExport !== null ) {
 			customExport.addEventListener("click", function(e) {
 				e.preventDefault();
-				// alert('message?: DOMString');
+				// get all page ids list screening in order list page
 				var allPages 	=	get_page_ids();
 
 				var data = {
@@ -86,7 +91,7 @@
 						downloadLink.click();
 						document.body.removeChild(downloadLink);
 
-						$('#customExport').text(allPages.length+' Items Exported!');
+						$('#customExport').text(allPages.length+' Orders Exported!');
 
 						setTimeout( function(){
 							$('#customExport').text('Export CSV');
@@ -165,10 +170,11 @@
 		return false;
 	}
 
+	// Return all page ids showing oder page using checkbox name posts
 	function get_page_ids(){
 		var all_ids 	=	[];
 		$("input[name='post[]']").each(function (index, obj) {
-	        // loop all checked items
+	        // loop all checked items and push post ids
 	        all_ids.push(obj.value);
 	    });
 

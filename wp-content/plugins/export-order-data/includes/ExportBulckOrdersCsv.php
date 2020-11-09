@@ -12,14 +12,16 @@ class ExportBulckOrdersCsv extends ExportOrderData
 	protected function export_buck_orders_data_csv( $post_ids ){
 		// get sub class for some functions
 		require_once( 'ExportOrderDataCsv.php' );
-
+		// Get saved settings for export CSV
 		$saved_data 	=	ExportOrderDataCsv::get_saved_settings_data();
 		$saved_data 	=	( $saved_data ) ? $saved_data : 'order_id | order_date | name | status | order_total |';
 		$saved_data 	=	ExportOrderDataCsv::return_saved_data_as_array($saved_data);
 
+		// Set file name for CSV File
 		$filename = 'genarated-csv-for-'.count($post_ids).'-orders.csv';
 		$fp = fopen('php://output', 'w');
 
+		// Set headings for CSV file
 		$csv_headings 	=	[];
 		for ($i=0; $i < count($saved_data); $i++) { 
 			if ( $saved_data[$i] != '' ) {
@@ -27,16 +29,20 @@ class ExportBulckOrdersCsv extends ExportOrderData
 			}
 		}
 
+		// check post ids list
 		if ( $post_ids ) {
 			header('Content-type: application/csv; charset=utf-8');
 			header('Content-Disposition: attachment; filename='.$filename);
-			// Set CSV Headings
+			// Set CSV Headings list
 			fputcsv($fp, $csv_headings);
 
+			// Loop the post ids list send by action
 			for ($i=0; $i < count($post_ids); $i++) { 
-				
+
+				// Get specifc order data using ID
 				$order = wc_get_order($post_ids[$i]);
 
+				// Looping and collecting data as checking saved values by user
 				foreach ( $saved_data as $key => $head ) {
 					if ( $head != '' ) {
 						switch ($head) {
@@ -71,15 +77,13 @@ class ExportBulckOrdersCsv extends ExportOrderData
 								$export_array[$key] = $order->payment_method_title;
 								break;
 						}
-						$custom_headings[] 	=  ucfirst(	str_replace('_', ' ', $head ) );
 					}
 				}
-
+				// Set body of data array
 				fputcsv($fp, $export_array);
-
 			}
 		}
-
+		// Close CSV process 
 		fclose($fp);
 	    ob_end_flush();
 

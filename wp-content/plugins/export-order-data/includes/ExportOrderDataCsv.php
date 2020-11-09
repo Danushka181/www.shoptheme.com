@@ -8,28 +8,31 @@ defined( 'ABSPATH' ) or die( 'Hey, you cant do this!');
 
 class ExportOrderDataCsv extends ExportOrderData
 {
-
+	// function for export single order
 	protected function export_single_order_data(){
-
+		// check if gave get or post request
 		if ( isset( $_POST ) || isset( $_GET ) ) {
-
+			// Get saved settings 
 			$saved_data 	=	self::get_saved_settings_data();
 			$saved_data 	=	( $saved_data ) ? $saved_data : 'order_id | order_date | name | status | order_total |';
 			$saved_data 	=	self::return_saved_data_as_array($saved_data);
 
 			// Ajax post order id
 			$order_id 	=	$_POST['order'];
+
+			// set post order id or get order id
 			$order_id 	=	( $order_id ) ? $order_id : $_GET['order'];
 
 			// get current order by id
 			$order = wc_get_order($order_id);
 
-			// var_dump($order);
+			// dynamic file name for CSV
 			$filename = 'genarated-csv-order-'.$order_id.'.csv';
 			$fp = fopen('php://output', 'w');
 
 			$header = $saved_data;
 
+			// Define empty arrays
 			$export_array = $custom_headings = [];
 			if ( $header ) {
 				header('Content-type: application/csv; charset=utf-8');
@@ -72,30 +75,26 @@ class ExportOrderDataCsv extends ExportOrderData
 						$custom_headings[] 	=  ucfirst(	str_replace('_', ' ', $head ) );
 					}
 				}
+				// set custom headings 
 				fputcsv($fp, $custom_headings);
+				// Set custom  dataset for CSV Body
 				fputcsv($fp, $export_array);
 				fclose($fp);
 	            ob_end_flush();
 			}		
 
             exit();
-
-
 		}
-
-
 	}
 
+	// make user saved settings as array
 	function return_saved_data_as_array( $data=null ){
 		$make_data_array 	=	array();
 		if ( $data ) {
 			// Make saved data as array
 			$make_data_array 	=	array();
 			$make_data_array 	= 	array_map('trim',array_filter(explode('|',$data)));
-
 		}
 		return $make_data_array;
 	}
-
-
 }

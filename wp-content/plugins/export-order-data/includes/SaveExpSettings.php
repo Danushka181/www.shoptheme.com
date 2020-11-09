@@ -8,6 +8,7 @@ defined( 'ABSPATH' ) or die( 'Hey, you cant do this!');
 	
 class SaveExpSettings extends ExportOrderData
 {
+	// Save user modified settings to database
 	protected function save_exp_order_data(){
 		// check forms data send 
 		if ( isset( $_POST['form_data'] )) {
@@ -27,8 +28,9 @@ class SaveExpSettings extends ExportOrderData
 
 			// Check this user if settings already saved
             $results = $wpdb->get_results( "SELECT * FROM $table_name WHERE user_names=$currnet_user");
-
+			// If seetings aleady saved check 
             if ( count($results) != 0 ) {
+				// Update if settings already saved
             	$res 	= $wpdb->query($wpdb->prepare("UPDATE $table_name SET export_items='$form_post_data' WHERE user_names=$currnet_user"));
             	if ( $res == 0 ) {
             		$msg 	= 'Already Updated!';
@@ -36,11 +38,12 @@ class SaveExpSettings extends ExportOrderData
             		$msg 	= 'New setting Updated!';
             	}
             }else{
+				// Insert new row if already data not id table
             	$res 	= $wpdb->insert( $table_name, $data_arr );
             	$msg 	= 'New setting Added!';
-            }
-
-
+			}
+			
+			// make array for send response for ajax
             if ( $res ) {
             	$response['status'] =	true;
             	$response['res'] 	=	$res;
@@ -51,8 +54,9 @@ class SaveExpSettings extends ExportOrderData
             	$response['status'] =	false;
             	$response['msg'] 	=	$msg;
             	$response['color'] 	=	"red";
-            }
-
+			}
+			
+			// pars created response for ajax
             echo json_encode( $response );
 
 		}
